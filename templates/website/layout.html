@@ -1,0 +1,22 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}My Django Project{% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static 'style.css'  %}">
+</head>
+<body>
+ <nav>
+   this is default navigation bar
+    </nav>
+    
+    {% block content %}
+    <!-- Content will be injected here -->
+    {% endblock %}  
+</body>
+</html>
